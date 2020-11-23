@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <section class="audio-player">
+        <div class="progressbar">
+            <div class="progress"></div>
+        </div>
+        <p id="volumetext"></p>
+    </section>
+
+    <div class="timer">
+        <span id="timerup"></span>
+        <span id="timerdown"></span>
+    </div>
+
+    <section>
+        <img id="playback" src="img/play-back.svg">    
+        <img id="playpause" src="img/play.svg">
+        <img id="playforward" src="img/play-forward.svg">
+        <input type="range" min="0" max="100" id="volume" value="100">
+    </section>
+
+    
+<audio id="audio">
+    <source src="audio/bensound-punky.mp3">
+</audio>
+
+<script src="js/index.js"></script>
+</body>
+</html>
